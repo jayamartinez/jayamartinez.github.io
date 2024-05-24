@@ -11,30 +11,75 @@
     ></script>
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="#" class="name">Jay Martinez</a>
-        <ul class="navLinks">
-          <li><a id="homeBtn" href="#">Home</a></li>
-          <li><a id="aboutBtn" href="#">About</a></li>
-          <li><a id="projectsBtn" href="#">Projects</a></li>
-          <li><a id="contactBtn" href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <br />
-    <br />
+    <div class="container">
+      <header>
+        <nav>
+          <a href="#" class="name">Jay Martinez</a>
+          <ul class="navLinks">
+            <li><a id="homeBtn" href="#">Home</a></li>
+            <li><a id="aboutBtn" href="#about">About</a></li>
+            <li><a id="projectsBtn" href="#projects">Projects</a></li>
+            <li><a id="contactBtn" href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <br />
+      <br />
+      <section id="home">
+        <h2>Hello, I'm <span class="name">Jay Martinez</span>, I'm a</h2>
+        <h1>Full-Stack Developer</h1>
+        <h2>Based in <span id="location">Queens, New York</span></h2>
+        <div class="icon-container">
+          <a href="https://github.com/jayamartinez" target="_blank">
+            <i class="fa-brands fa-github fa-2xl"></i>
+          </a>
+          <a href="https://linkedin.com/in/jayamartinez" target="_blank">
+            <i class="fa-brands fa-linkedin fa-2xl"></i>
+          </a>
+        </div>
+      </section>
 
-    <div id="home">
-      <h2>Hello, I'm <span class="name">Jay Martinez</span>, I'm a</h2>
-      <h1>Full-Stack Developer</h1>
-      <h2>Based in <span id="location">Queens, New York</span></h2>
-      <a href="https://github.com/jayamartinez" target="_blank">
-        <i class="fa-brands fa-github fa-2xl"></i>
-      </a>
-      <a href="https://linkedin.com/in/jayamartinez" target="_blank">
-        <i class="fa-brands fa-linkedin fa-2xl"></i>
-      </a>
+      <br />
+
+      <section id="about">
+        <h1>About Me</h1>
+        <h2>
+          My name is Jay, I'm currently learning
+          <i class="fa-brands fa-js" style="color: #ffd43b"></i>
+          <i class="fa-brands fa-react" style="color: #78e6ff"></i> with the
+          hopes of becoming a full-stack developer. In my free time I like
+          hanging out with my friends and occasionally playing video games. I've
+          recently started learning
+          <i class="fa-brands fa-js" style="color: #ffd43b"></i> through YouTube
+          tutorials.
+        </h2>
+      </section>
+
+      <br />
+
+      <section id="techStack">
+        <h1>Languages I work with</h1>
+        <!-- will be changed to tech stack in the future-->
+
+        <br />
+
+        <img src="images/java-icon.svg" class="icons" />
+        <img src="images/python-icon.svg" class="icons" />
+        <!-- <i class="fa-brands fa-java fa-2xl"></i>
+          <i class="fa-brands fa-python fa-2xl"></i> -->
+        <br />
+        <!-- <i class="fa-brands fa-html5 fa-2xl"></i>
+          <i class="fa-brands fa-css3-alt fa-2xl"></i>
+          <i class="fa-brands fa-js fa-2xl"></i> -->
+        <img src="images/html5-icon.svg" class="icons" />
+        <img src="images/css3-icon.svg" class="icons" />
+        <img src="images/javascript-icon.svg" class="icons" />
+      </section>
+
+      <section id="projects">
+        <h1>Projects</h1>
+        <h2>none... yet</h2>
+      </section>
     </div>
 
     <script src="index.js"></script>

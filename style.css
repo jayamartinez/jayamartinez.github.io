@@ -5,6 +5,7 @@
   padding: 0;
   background-color: white;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 li,
@@ -22,8 +23,12 @@ header {
   align-items: center;
   text-align: left;
   padding: 30px;
-  background-color: white;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 }
 
 nav {
@@ -39,6 +44,15 @@ header .name {
   font-weight: 600;
 }
 
+.container {
+  padding-top: 100px;
+}
+
+section {
+  padding: 100px 20px;
+  text-align: center;
+}
+
 .navLinks {
   display: flex;
   gap: 20px;
@@ -47,8 +61,41 @@ header .name {
 }
 
 #home {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h2 {
+  font-weight: 500;
+  color: rgb(61, 61, 61);
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+#location {
+  font-weight: 525;
+  color: black;
+}
+
+.name {
+  font-weight: 525;
+  color: black;
+}
+
+#about,
+#techStack,
+#projects {
+  min-height: 80vh;
+}
+
+#about {
   position: absolute;
-  top: 50%;
+  top: 110%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -56,22 +103,27 @@ header .name {
   align-items: center;
 }
 
-#home h2 {
-  font-weight: 500;
-  color: rgb(61, 61, 61);
+#techStack {
+  position: absolute;
+  top: 160%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
-#home h1 {
-  font-size: 36px;
-  font-weight: 600;
+#projects {
+  position: absolute;
+  top: 210%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
-#home #location {
-  font-weight: 525;
-  color: black;
-}
-
-#home .name {
-  font-weight: 525;
-  color: black;
+.icons {
+  width: 50px;
+  height: 50px;
 }
